@@ -1,0 +1,245 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Spartan", sans-serif;
+    line-height: 1.3rem;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 100%);
+    background: url(../images/bg-pattern-top-mobile.svg) left top no-repeat,
+                url(../images/bg-pattern-bottom-mobile.svg) right bottom no-repeat;
+}
+
+.content {
+    margin: 6%;
+}
+
+header {
+    padding: 8%;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    line-height: 2rem;
+}
+
+header p {
+    color: hsl(303, 10%, 53%);
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+aside {
+    margin-top: 3rem;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.rating {
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    height: 5rem;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1em;
+}
+
+.rating img {
+    padding: 0 0.25em;
+}
+
+.rating p {
+    margin-top: 0.5rem;
+}
+
+section {
+    margin: 5rem 0;
+}
+
+.testimonials {
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.profile {
+    display: flex;
+    font-weight: 500;
+}
+
+.profile img {
+    height: 4.25rem;
+    width: 4.25rem;
+}
+
+.profile span {
+    margin-left: 1.6rem;
+}
+
+.testimonials img {
+    border-radius: 50%;
+}
+
+.vb {
+    color: hsl(333, 80%, 67%);
+    margin-top: -0.7rem;
+    font-weight: 400;
+}
+
+.testimonials p {
+    font-weight: 400;
+}
+
+.quote {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    header {
+        padding: 5% 15%;
+    }
+
+    aside {
+        display: flex;
+        flex-flow: column;
+        margin-top: 0;
+    }
+
+    .rating {
+        width: 70%;
+    }
+
+    .r2 {
+        align-self: center;
+    }
+
+    .r3 {
+        align-self: flex-end;
+    }
+
+
+    section {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .testimonials {
+        width: 80%;
+    }
+
+    .testimonials .quote {
+        line-height: 1.6rem;
+    }
+
+    .t2 {
+        align-self: center;
+    }
+
+    .t3 {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background: url(../images/bg-pattern-top-desktop.svg) left top no-repeat,
+                    url(../images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10% 5% 5% 5%;
+    }
+
+    header {
+        width: 38%;
+        text-align: start;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    aside {
+        width: 60%;
+    }
+
+    .rating {
+        width: 90%;
+        height: 4rem;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .rating span {
+        margin-left: 5%;
+        align-self: center;
+    }
+
+    .rating img {
+        padding: 0 0.10rem;
+        align-self: center;
+    }
+
+    .rating p {
+        padding-left: 1rem;
+        margin-top: 0.3rem;
+    }
+
+    section {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        position: relative;
+        height: 375px;
+    }
+
+    .testimonials {
+        height: 20rem;
+        width: 31.5%;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .t2 {
+        align-self: center;
+    }
+
+    .t3 {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 1214px) {
+    .content {
+        margin: 10% 10% 5% 10%;
+    }
+
+    .rating {
+        width: 75%;
+    }
+
+    .testimonials {
+        padding: 2rem;
+    }
+}
