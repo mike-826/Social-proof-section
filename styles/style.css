@@ -84,7 +84,7 @@ section {
     width: 4.25rem;
 }
 
-.profile span {
+.profile div {
     margin-left: 1.6rem;
 }
 
@@ -191,7 +191,7 @@ section {
         justify-content: space-around;
     }
 
-    .rating span {
+    .rating div {
         margin-left: 5%;
         align-self: center;
     }
